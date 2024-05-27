@@ -1,0 +1,39 @@
+.cart{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    
+}
+.carttitle{
+    font-size: 30px;
+    margin: 10px ;
+    text-align: center;
+}
+.cartItem{
+    width: 400px;
+    background-color: white;
+    border-radius: 25px  ;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 20px auto;
+    box-shadow: 10px 15px rgb(242, 241, 241);
+}
+.description{
+    margin-right: 10rem;
+}
+.countHandler{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+}
+.countHandler input{
+    width: 40px;
+    margin: auto 5px;
+    text-align: center;
+}
+.countHandler button{
+    width: 30px;
+    height: 20px;
+    font-weight: 700;
+}

@@ -1,5 +1,6 @@
 import React, { createContext, useState } from "react";
 import { PRODUCTS } from "../products";
+import { Upload } from "phosphor-react";
 
 export const ShopContext = createContext(null);
 
@@ -20,9 +21,12 @@ export const ShopContextProvider = (props) => {
   const removeToCart = (itemId) => {
     setCardItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
+  const updateCartItemCount = (newAmount, itemsId) =>{
+    setCardItems((prev)=>({...prev,[itemsId]: newAmount}))
+  }
 
-  const contextValue = { cartItems, addToCart, removeToCart };
-  
+  const contextValue = { cartItems, addToCart, removeToCart, updateCartItemCount };
+
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}
