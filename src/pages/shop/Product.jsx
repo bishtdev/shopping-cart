@@ -5,7 +5,7 @@ import { ShopContext } from "../../context/shop-context";
 const Product = ({ data }) => {
   const { addToCart , cartItems } = useContext(ShopContext);
 
-  const cartItemAmount = cartItems[id]
+  const cartItemAmount = cartItems[data.id]
 
   return (
     <div className="product">
@@ -17,7 +17,7 @@ const Product = ({ data }) => {
         <p>${data.price}</p>
       </div>
       <button className="addtocartbtn" onClick={() => addToCart(data.id)}>
-        Add To Cart {cartItemAmount > 0 && ({cartItemAmount}) }
+        Add To Cart {cartItemAmount > 0 &&  <>({cartItemAmount})</> }
       </button>
     </div>
   );
