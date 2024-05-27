@@ -1,5 +1,5 @@
 .navbar{
-    width: 100%;
+    width: 100vw;
     height: 8vh;
     background-color: black;
     display: flex;
@@ -24,4 +24,10 @@
 }
 .links a :hover{
     color: rgb(165, 160, 160);
+}
+@media only screen and (max-width: 600px){
+    .navbar{
+        width: 110%;
+        height: 6vh;
+    }
 }
