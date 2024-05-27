@@ -37,3 +37,30 @@
     height: 20px;
     font-weight: 700;
 }
+.checkout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkout p{
+    font-weight: 700;
+}
+.dev{
+    text-align: center;
+}
+.checkout button{
+    margin: 10px;
+    width: 7rem ;
+    background-color: black;
+    color: white;
+    height: 2.5rem;
+    border: 1px bold black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+}
+.checkout button:hover{
+    transition: ease-in-out 0.3s;
+    background-color: white;
+    color: black;
+}
